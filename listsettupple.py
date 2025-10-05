@@ -56,3 +56,23 @@ price=[1,2,2,3]
 
 total=sum(price)
 print(f"your total is:{total}")
+
+
+'''setttt1=set()
+isturning=True
+isrunning=True
+while isrunning:
+    name=input("enter your name")
+    setttt1.add(name)
+
+    while isturning:
+        exit=input("do u want to exit y/n")
+        if exit=="y":
+            isrunning=False
+            isturning=False
+        elif exit=="n":
+            isrunning=True
+            break
+            
+
+    print(setttt1)'''
