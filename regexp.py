@@ -17,6 +17,10 @@ if re.match(sttr_1,"aaapple"):
 else:
     print("not match")
 '''
+
+
+
+'''
 #findall()=returns a list containing all matches
 #if it finds the match in the string it returns the list of the matched string
 sttr_2="The rain in m to shame in me Spain"
@@ -37,10 +41,32 @@ else:
     print("not match")
 
 
-    
+
 #search()=searches the string for a match and returns a match object if there is a match
 #If there is more than one match, only the first occurrence of the match will be returned
 if re.search("ai",sttr_2):
     print("match")
 else:
     print("not match")
+'''
+
+
+
+
+#sub()=replaces the matches with the text of your choice
+#The sub() function takes three arguments: the pattern, the replacement string, and the string to be searched
+ 
+ #syntax 
+ # sub(pattern,replacement,string,count=0,flags=0)
+sttr_2="The rain in m to shame in me Spain"
+pattern="ai"
+print(re.sub(pattern,"boo",sttr_2))
+         #pattern what we are changing
+         #"boo" what we change to
+         #sttr_2 from what we are changing
+x="xox"
+print(re.sub(pattern,x,sttr_2))
+
+jo=re.sub(pattern,"boo",sttr_2)
+print(jo)
+#diff types of doing
