@@ -104,3 +104,11 @@ for x in range(rows):
         print(symbol,end="")
     print()
     #list/array same fucking same
+
+'''list comprehension is a way to create a list in a single line of code using a for
+ loop and optional if condition'''
+
+name=["raghava","sai","kiran","sai kiran"]
+new_list=[]
+for n in name:
+    new_list.append(n)

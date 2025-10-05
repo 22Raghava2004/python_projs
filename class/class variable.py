@@ -25,7 +25,7 @@ print(student3.name)
 print(student4.name)
  
 
-
+'''
  #######
 class student:
     def mode(self, name):
@@ -42,3 +42,4 @@ dev2.display()
 dev3.mode("jane")# Assigning a name to dev3
 print(dev3.name)  # Accessing the name attribute directly
 dev3.display()  # Calling the display method to show the name
+'''
