@@ -18,7 +18,7 @@ window.mainloop()
 
 '''
 
-
+'''
 window = Tk()
 window.geometry("700x500")
 
@@ -29,10 +29,31 @@ x1, y1, x2, y2 = 50, 150, 150, 250
 
 def draw_rect(i, x1, y1, x2, y2):
     if x2<=1600: #i<5:
-        c.create_rectangle(x1, y1, x2, y2, width=4, fill="pink",outline="yellow", dash=(4,5))
+        c.create_rectangle(x1, y1, x2, y2,text="y friend", width=4, fill="pink",outline="yellow", dash=(4,5))
         window.after(500, draw_rect, i+1, x1+120, y1, x2+120, y2)
 
 draw_rect(0, x1, y1, x2, y2)
 window.mainloop()
 
 
+'''
+
+from tkinter import *
+
+window = Tk()
+window.geometry("700x500")
+
+c = Canvas(window, width=1600, height=400, bg="black")
+c.pack()
+
+x1, y1, x2, y2 = 50, 150, 150, 250
+
+def draw_rect(i, x1, y1, x2, y2):
+    if x2 <= 1600:
+        c.create_rectangle(x1, y1, x2, y2, width=4, fill="pink", outline="yellow", dash=(4,5))
+        # draw text in the center of the rectangle
+        c.create_text((x1+x2)//2, (y1+y2)//2, text="my friend", fill="white", font=("Arial", 12, "bold"))
+        window.after(500, draw_rect, i+1, x1+120, y1, x2+120, y2)
+
+draw_rect(0, x1, y1, x2, y2)
+window.mainloop()
