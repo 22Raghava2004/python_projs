@@ -304,3 +304,4 @@ for line in range(6):
 for die in dice:
     total+=die
 print(f"total:{total}")
+print(f"average:{total/dice_no}")

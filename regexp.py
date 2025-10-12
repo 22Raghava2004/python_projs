@@ -70,3 +70,5 @@ print(re.sub(pattern,x,sttr_2))
 jo=re.sub(pattern,"boo",sttr_2)
 print(jo)
 #diff types of doing
+
+# this is a 
